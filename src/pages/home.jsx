@@ -3,6 +3,8 @@ import React from 'react';
 import Logo from '../imgs/Logo Grande.png'
 import DartIcon from '../icons/icons8-dardo.svg';
 
+import '../style/home.css'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWordpress, faCss3Alt, faHtml5, faPython, faJs, faGitAlt, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faPlay, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
@@ -21,61 +23,64 @@ function Home(){
                     <li><a href='#redes'>REDES</a></li>
                 </ul>
             </header>
-            <section className='sobremim'>
+            <section id='sobremim' className='sobremim'>
                 <h1>Sobre mim</h1>
-                <div className='cards_linguagens'>
+                <div className='cards_flex'>
                     <h3>Linguagens de Programação</h3>
-                    <div id='html_card'>
+                <div className='cards_linguagens' id='card'>
+                    <div id='html_card' className='cards'>
                         <FontAwesomeIcon icon={faHtml5} />
                         <p>HTML5</p>
                     </div>
-                    <div id='css_card'>
+                    <div id='css_card' className='cards'>
                         <FontAwesomeIcon icon={faCss3Alt} />
                         <p>CSS3</p>
                     </div>
-                    <div id='js_card'>
+                    <div id='js_card' className='cards'>
                         <FontAwesomeIcon icon={faJs} />
                         <p>JavaScript</p>
                     </div>
-                    <div id='python_card'>
+                    <div id='python_card' className='cards'>
                         <FontAwesomeIcon icon={faPython} />
                         <p>Python</p>
                     </div>
                 </div>
 
-                <div className='cards_estudando'>
-                    <h3>Estudando</h3>
-                    <div id='dart_card'>
-                        <img src={DartIcon} alt="Ícone Dart" />
-                        <p>Dart</p>
-                    </div>
-                </div>
-
-                <div className='cards_ferramentas'>
-                    <h3>Ferramentas de Controle de Versão</h3>
-                    <div id='git_card'>
-                        <FontAwesomeIcon icon={faGitAlt} />
-                        <p>GIT</p>
-                    </div>
-                </div>
-
                 <div className='cards_bibli_frame'>
                     <h3>Bibliotecas e Frameworks</h3>
-                    <div id='react_card'>
+                    <div id='react_card' className='cards'>
                         <FontAwesomeIcon icon={faReact} />
                         <p>React</p>
                     </div>
                 </div>
 
+                <div className='cards_estudando'>
+                    <h3>Estudando</h3>
+                    <div id='dart_card' className='cards'>
+                        <img src={DartIcon} alt="Ícone Dart" />
+                        <p>Dart</p>
+                    </div>
+                </div>
+ 
+                <div className='cards_ferramentas'>
+                    <h3>Ferramentas de Controle de Versão</h3>
+                    <div id='git_card' className='cards'>
+                        <FontAwesomeIcon icon={faGitAlt} />
+                        <p>GIT</p>
+                    </div>
+                </div>
+
+
                 <div className='cards_habilidades'>
                     <h3>Outras Habilidades</h3>
-                    <div id='testes_card'>
+                    <div id='testes_card' className='cards'>
                         <FontAwesomeIcon icon={faLaptopCode} />
                         <p>Testes Unitários</p>
                     </div>
                 </div>
+                </div>
             </section>
-            <section className='projetos'>
+            <section id='projetos' className='projetos'>
                 <h1>Projetos</h1>
                 <div className='cards_projetos'>
                     <h2>Site - Luca Pimenta DG</h2>

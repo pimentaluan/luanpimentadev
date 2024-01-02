@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Quicksand&display=swap');
+
+
+body{
+    background-color: #E1E1E1;
+}
+
+header{
+    background-color: #0493FB;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+
+section{
+    padding: 40px;
+}
+.logo-img{
+    width: 35%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+li {
+    list-style-type: none;
+    transition: 150ms;
+    padding: 10px;
+}
+
+li:hover{
+    transform: scale(1.1);
+    margin-top: -10px;
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 18pt;
+    font-family: 'Kanit', sans-serif;
+}
+
+a:hover{
+    color: rgb(20, 20, 20);
+}
+
+.sobremim{
+    background-color: #E1E1E1;
+}
+
+.sobremim h1{
+    color: rgb(19, 19, 19);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 35pt;
+}
+
+.cards{
+    background: rgba(80, 80, 80, 0.18);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border-radius: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    margin: 10px;
+    padding: 15px;
+    transition: 300ms;
+}
+
+#card{
+    display: flex;
+}
+
+.cards_flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+}
+
+.cards_flex{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.cards_flex p{
+    font-size: 12pt;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.cards_flex svg{
+    font-size: 40pt;
+}
+
+#html_card{
+    color: #F1743C;
+}
+#css_card{
+    color: #0580BB;
+}
+#js_card{
+    color: #cca106;
+}
+
+#python_card{
+    color: #1e6d68;
+}
+
+#dart_card{
+    color: #1565C0;
+}
+
+#git_card{
+    color: #E84D31;
+}
+
+#react_card{
+    color: #0d50a7;
+}
+
+#testes_card{
+    color: #212121;
+}
+
+
+#dart_card img{
+    width: 40pt;
+}
+
+
+.cards:hover{
+    background: rgba(66, 165, 204, 0.281);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+}
