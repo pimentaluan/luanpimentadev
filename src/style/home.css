@@ -5,7 +5,7 @@ body{
     background-color: #E1E1E1;
 }
 
-header{
+#home_header{
     background-color: #0493FB;
     display: flex;
     flex-direction: column;
@@ -16,54 +16,55 @@ header{
 section{
     padding: 40px;
 }
-.logo-img{
-    width: 35%;
+
+#home_header .logo-img{
+    width: 400px;
     margin: auto;
     margin-top: 20px;
 }
 
-ul{
+#home_header ul{
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
-li {
+#home_header li {
     list-style-type: none;
     transition: 150ms;
     padding: 10px;
 }
 
-li:hover{
+#home_header li:hover{
     transform: scale(1.1);
     margin-top: -10px;
 }
 
-a{
+#home_header a{
     color: aliceblue;
     text-decoration: none;
     font-size: 18pt;
     font-family: 'Kanit', sans-serif;
 }
 
-a:hover{
+#home_header a:hover{
     color: rgb(20, 20, 20);
 }
 
 .sobremim{
-    background-color: #E1E1E1;
+    background-color: #FFFFFF;
 }
 
 .sobremim h1{
-    color: rgb(19, 19, 19);
+    color: rgb(0, 0, 0);
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     font-size: 35pt;
 }
 
 .cards{
-    background: rgba(0, 0, 0, 0.18);
+    background: rgba(66, 165, 204, 0.281);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.4px);
     -webkit-backdrop-filter: blur(4.4px);
@@ -79,6 +80,7 @@ a:hover{
 
 #card{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .cards_flex{
@@ -86,10 +88,11 @@ a:hover{
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: column;
+        font-family: 'Quicksand', sans-serif;
 }
 
-.cards_flex{
-    font-family: 'Quicksand', sans-serif;
+.cards_flex h3{
+    color: #5c5c5c;
 }
 
 .cards_flex p{
@@ -108,7 +111,7 @@ a:hover{
     color: #0580BB;
 }
 #js_card{
-    color: #dde000;
+    color: #cca701;
 }
 
 #python_card{
@@ -146,7 +149,7 @@ a:hover{
 
 
 .cards:hover{
-    background: rgba(66, 165, 204, 0.281);
+    background: rgba(255, 255, 255, 0.18);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.4px);
     -webkit-backdrop-filter: blur(4.4px);
@@ -157,12 +160,12 @@ a:hover{
 }
 
 .projetos{
-    background-color: #ffffff;
+    background-color: #E1E1E1;
     color: #201e1e;
 }
 
 .projetos h1{
-    color: rgb(59, 59, 59);
+    color: rgb(0, 0, 0);
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     font-size: 35pt;
@@ -175,22 +178,20 @@ a:hover{
 }
 
 .cards_projetos{
-    background: rgba(66, 165, 204, 0.281);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4.4px);
-    -webkit-backdrop-filter: blur(4.4px);
+    background: #ebebeb;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 350px;
+    width: 300px;
     margin: 10px;
     padding: 15px;
     transition: 300ms;
 }
 
 .cards_projetos img{
-    width: 350px;
+    width: 100%;
     background-color: #0493FB;
     border-radius: 20px;
 }
@@ -218,15 +219,19 @@ a:hover{
     color: #0580BB;
 }
 
+#elementor{
+    color: #8D0039;
+}
+
 .preview_projetos svg{
     margin-top: 10px;
-    color: #212121;
+    color: #161616;
     font-size: 30pt;
     transition: 300ms;
 }
 
 .preview_projetos svg:hover{
-    color: #ffffff;
+    color: #252525;
     transform: scale(1.1);
 }
 
@@ -236,11 +241,107 @@ a:hover{
 
 .linguagem_projetos{
     display: flex;
-    width: 100%;
+    width: 300px;
     justify-content: space-around;
     margin-top: auto;
 }
 
 .linguagem_projetos svg:hover{
     transform: scale(1.1);
+}
+
+.orcamento{
+    background-color: #FFFFFF;
+}
+
+#orcamento_flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.orcamento h1{
+    color: rgb(9, 9, 9);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 35pt;
+}
+
+.cards_orcamento{
+    border-radius: 20px;
+    background-color: #ffffff;
+    width: 350px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.cards_orcamento h3{
+    background-color: #0493FB;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: #E1E1E1;
+    font-weight: 200;
+    text-align: center;
+    font-size: 20pt;
+    padding: 20px;
+    margin: auto;
+}
+
+.cards_orcamento h2 #moeda{
+    color: #0493FB;
+    font-size: 10pt;
+}
+
+.cards_orcamento h2{
+    color: #0493FB;
+    font-size: 40pt;
+    margin: 0px;
+}
+
+.cards_orcamento h2 #manutençao{
+    color: #0493FB;
+    font-size: 15pt;
+    font-weight: 200;
+}
+
+.cards_orcamento ul{
+    text-align: center;
+    padding-left: 0px;
+}
+
+.cards_orcamento li {
+    position: relative;
+    padding: 10px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    
+    list-style-type: none;
+    transition: 150ms;
+    height: 60px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.cards_orcamento li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 1pt;
+    width: 87%;
+    background: #3a3a3a;
+}
+
+.cards_orcamento li:last-child::after {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #home_header ul{
+        display: none;
+    }
 }
