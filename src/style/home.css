@@ -63,15 +63,15 @@ a:hover{
 }
 
 .cards{
-    background: rgba(80, 80, 80, 0.18);
+    background: rgba(0, 0, 0, 0.18);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.4px);
     -webkit-backdrop-filter: blur(4.4px);
-    border-radius: 8%;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 120px;
+    width: 90px;
     margin: 10px;
     padding: 15px;
     transition: 300ms;
@@ -93,12 +93,12 @@ a:hover{
 }
 
 .cards_flex p{
-    font-size: 12pt;
+    font-size: 10pt;
     font-family: 'Quicksand', sans-serif;
 }
 
 .cards_flex svg{
-    font-size: 40pt;
+    font-size: 30pt;
 }
 
 #html_card{
@@ -108,7 +108,7 @@ a:hover{
     color: #0580BB;
 }
 #js_card{
-    color: #cca106;
+    color: #dde000;
 }
 
 #python_card{
@@ -133,7 +133,15 @@ a:hover{
 
 
 #dart_card img{
-    width: 40pt;
+    width: 30pt;
+}
+
+#wordpress_card{
+    color: #207196;
+}
+
+#elementor_card{
+    color: #8D0039;
 }
 
 
@@ -142,4 +150,97 @@ a:hover{
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.4px);
     -webkit-backdrop-filter: blur(4.4px);
+}
+
+#plus{
+    font-size: 13pt;
+}
+
+.projetos{
+    background-color: #ffffff;
+    color: #201e1e;
+}
+
+.projetos h1{
+    color: rgb(59, 59, 59);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 35pt;
+}
+
+.projetos_flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.cards_projetos{
+    background: rgba(66, 165, 204, 0.281);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    margin: 10px;
+    padding: 15px;
+    transition: 300ms;
+}
+
+.cards_projetos img{
+    width: 350px;
+    background-color: #0493FB;
+    border-radius: 20px;
+}
+
+.cards_projetos h2{
+    font-size: 17pt;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+}
+
+.cards_projetos p{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.projetos_flex svg{
+    font-size: 40pt;
+}
+
+
+#wordpress{
+    color: #207196;
+}
+
+#css{
+    color: #0580BB;
+}
+
+.preview_projetos svg{
+    margin-top: 10px;
+    color: #212121;
+    font-size: 30pt;
+    transition: 300ms;
+}
+
+.preview_projetos svg:hover{
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.preview_projetos svg::after{
+    color: #0493FB;
+}
+
+.linguagem_projetos{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: auto;
+}
+
+.linguagem_projetos svg:hover{
+    transform: scale(1.1);
 }
