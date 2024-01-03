@@ -10,6 +10,8 @@ body{
     display: flex;
     flex-direction: column;
     height: auto;
+    width: 100%;
+    align-items: center;
 }
 
 
@@ -17,8 +19,13 @@ section{
     padding: 40px;
 }
 
-#home_header .logo-img{
-    width: 400px;
+#logo_img{
+    width: 35%;
+}
+
+
+.logo-img{
+    width: 100%;
     margin: auto;
     margin-top: 20px;
 }
@@ -336,12 +343,34 @@ section{
     background: #3a3a3a;
 }
 
+
 .cards_orcamento li:last-child::after {
     display: none;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 480px) {
     #home_header ul{
         display: none;
+    }
+
+    #card{
+        justify-content: space-around;
+    }
+
+    .cards{
+        width: 50%;
+    }
+
+    .cards svg{
+        font-size: 70pt;
+    }
+
+    .cards p{
+        font-size: 19pt;
+    }
+
+    .cards_flex h3{
+        font-size: 26pt;
+        margin-top: 80px;
     }
 }

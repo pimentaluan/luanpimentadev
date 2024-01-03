@@ -17,7 +17,9 @@ function Home(){
     return (
         <div>
             <header id='home_header'>
-                <img src={Logo} alt='Logo Luan Pimenta DEV' className='logo-img'></img>
+                <div id='logo_img'>
+                    <img src={Logo} alt='Logo Luan Pimenta DEV' className='logo-img'></img>
+                </div>
                 <ul className='menu'>
                     <li><a href='#sobremim'>SOBRE MIM</a></li>
                     <li><a href='#projetos'>PROJETOS</a></li>
