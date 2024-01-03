@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 import Logo from '../imgs/Logo Grande.png'
 import DartIcon from '../icons/icons8-dardo.svg';
@@ -14,6 +14,56 @@ import { faPlay, faLaptopCode, faEye } from '@fortawesome/free-solid-svg-icons';
 
 function Home(){
     
+    const nomeRef = useRef(null);
+    const emailRef = useRef(null);
+    const botaoRef = useRef(null);
+    const telRef = useRef(null);
+    const assuntoRef = useRef(null);
+    const mensagemRef = useRef(null);
+
+    const nome_regex = /^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/;
+    const email_regex = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
+
+
+    const validacao_nome = () => {
+        const input = nomeRef.current;
+        const erroId = 'erro_nome';
+        const erroExistente = document.getElementById(erroId);
+        if (nome_regex.test(input.value)) {
+            if (erroExistente) {
+                erroExistente.remove();
+            }
+        } else {
+            if (!erroExistente) {
+                const paragrafo = document.createElement("p");
+                paragrafo.id = erroId;
+                const erro_texto = document.createTextNode('ERRO! Digite o nome, sem números!');
+                paragrafo.appendChild(erro_texto);
+                input.parentNode.insertBefore(paragrafo, input.nextSibling);
+            }
+        }
+    }    
+
+    const validacao_email = () => {
+        const input = emailRef.current;
+        const erroId = 'erro_email';
+        const erroExistente = document.getElementById(erroId);
+        if (email_regex.test(input.value)) {
+            if (erroExistente) {
+                erroExistente.remove();
+            }
+        } else {
+            if (!erroExistente) {
+                const paragrafo = document.createElement("p");
+                paragrafo.id = erroId;
+                const erro_texto = document.createTextNode('ERRO! Digite um email existente!');
+                paragrafo.appendChild(erro_texto);
+                input.parentNode.insertBefore(paragrafo, input.nextSibling);
+            }
+        }
+    }
+
+
     return (
         <div>
             <header id='home_header'>
@@ -169,6 +219,35 @@ function Home(){
                         </ul>
                     </div>
                 </div>
+            </section>
+
+            <section className='contato'>
+                <h1>Contato</h1>
+                <form>
+                    <div id='contato_linha1'>
+                        <label>Nome</label><br />
+                        <input type='text' ref={nomeRef} onBlur={validacao_nome} ></input>
+                    </div>
+                    <div id='contato_linha2'>
+                        <label>Email</label><br />
+                        <input type='email' ref={emailRef} onBlur={validacao_email}></input>
+                    </div>
+                    <div id='contato_linha3'>
+                        <label>Telefone</label><br />
+                        <input type='tel' ref={telRef}></input>
+                    </div>
+                    <div id='contato_linha4'>
+                        <label>Assunto</label><br />
+                        <input type='text' ref={assuntoRef}></input>
+                    </div>
+                    <div id='contato_linha5'>
+                        <label>Mensagem</label><br />
+                        <textarea type='text' ref={mensagemRef} ></textarea>
+                    </div>
+                    <div id='contato_linha6'>
+                        <input type='button' value='Enviar' id='enviar' ref={botaoRef}></input>
+                    </div>
+                </form>
             </section>
         </div>
     );

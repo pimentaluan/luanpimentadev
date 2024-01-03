@@ -348,6 +348,87 @@ section{
     display: none;
 }
 
+.contato{
+    display: flex;
+    flex-direction: column;
+}
+
+.contato h1{
+    color: rgb(9, 9, 9);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 35pt;
+}
+
+.contato label{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15pt;
+    font-weight: 800;
+}
+
+.contato input{
+    width: 60%;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: solid #0493FB 1px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    height: 25px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.contato input:focus{
+    outline: 0;
+}
+
+
+.contato textarea{
+    width: 60%;
+    background-color: transparent;
+    border: transparent;
+    border: solid #0493FB 1px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    height: 100px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.contato textarea:focus{
+    outline: 0;
+}
+
+#enviar{
+    background-color: #0493FB;
+    width: 100px;
+    color: white;
+    font-size: 13pt;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+#erro_nome{
+    color: red;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    font-size: 8pt;
+}
+
+#erro_email{
+    color: red;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    font-size: 8pt;
+}
+
+#erro_tel{
+    color: red;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    font-size: 8pt;
+}
+
 @media screen and (max-width: 480px) {
     #home_header ul{
         display: none;
